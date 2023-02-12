@@ -1,5 +1,6 @@
-import headshot from "../img/HeadShot.jpeg";
-import Navbar from "./Navbar";
+import headshot from "../../img/HeadShot.jpeg";
+import Navbar from "../Navbar";
+import "./styles.scss";
 
 const Intro = () => {
   return (

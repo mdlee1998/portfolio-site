@@ -1,4 +1,5 @@
-import logo from '../img/logo.svg';
+import logo from '../../img/logo.svg';
+import "./styles.scss";
 
 const Navbar = () => {
     return ( 
@@ -7,7 +8,7 @@ const Navbar = () => {
                     <div>
                         <a href="localhost:3000" className='logo'>
                             <img src={logo} alt="" />
-                        </a>
+                        </a> 
                     </div>
                     <div>
                         <ul>
