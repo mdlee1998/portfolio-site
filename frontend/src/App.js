@@ -1,7 +1,9 @@
+import Intro from "./components/Intro"
+
 function App() {
   return (
     <div className="App">
-      <p>I am a website</p>
+      <Intro></Intro>
     </div>
   );
 }
