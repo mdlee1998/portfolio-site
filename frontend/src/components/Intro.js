@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 const Intro = () => {
   return (
     <section className="intro">
+        <Navbar></Navbar>
       <div className="inner-content">
         <article>
           <h1>Matthew Lee</h1>
