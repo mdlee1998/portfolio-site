@@ -39,12 +39,14 @@
             >li {
                 margin-right: 1rem;
                 margin-left: 1rem;
-                >a {
+                >button {
                   text-decoration: none;
                   color: $electricBlue;
                   font-size: large;
                   font-weight: bold;
                   padding: 1rem;
+                  background: none;
+                  border: none;
                   &:hover {
                     background-color: $electricBlue;
                     border-radius: 3rem;
@@ -54,4 +56,12 @@
             }
         }
     }
+}
+
+.logo {
+  text-decoration: none;
+                  font-size: large;
+                  font-weight: bold;
+                  background: none;
+                  border: none;
 }
