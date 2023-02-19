@@ -2,30 +2,31 @@ import logo from '../../img/logo.svg';
 import "./styles.scss";
 
 const Navbar = () => {
+
     return ( 
             <header className='navbar'>
                 <nav>
                     <div>
-                        <a href="localhost:3000" className='logo'>
+                        <button href="localhost:3000" className='logo'>
                             <img src={logo} alt="" />
-                        </a> 
+                        </button> 
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <a href="">About Me</a>
+                                <button >About Me</button>
                             </li>
                             <li>
-                                <a href="">My Skills</a>
+                                <button >My Skills</button>
                             </li>
                             <li>
-                                <a href="">Projects</a>
+                                <button >Projects</button>
                             </li>
                             <li>
-                                <a href="">Contact Me</a>
+                                <button >Contact Me</button>
                             </li>
                             <li>
-                                <a href="">Resume</a>
+                                <button >Resume</button>
                             </li>
                         </ul>
                     </div>
