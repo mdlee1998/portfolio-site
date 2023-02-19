@@ -1,11 +1,26 @@
+import { changeSection } from './slices/sectionSlice';
 
 export const goToSection = opts => {
-    let {nextSection} = opts;
+    let { section, modifier } = opts;
 
-    if(!nextSection) return;
+    if(!section) return;
 
-    smoothScroll(nextSection.offsetTop);
+    const sections = getSections();
 
+    const currSectionIndex = sections.findIndex(sectionItem => {
+        return sectionItem.dataset.section === section.dataset.section;
+    });
+
+    if(modifier === 'next') {
+      section = sections[currSectionIndex + 1]
+    } else if(modifier === 'previous') {
+      section = sections[currSectionIndex - 1]; 
+    }
+
+    if(!section) return;
+
+    smoothScroll(section.offsetTop);
+    changeSection();
 }
 
 function smoothScroll(scrollTargetY, speed = 1000) {
@@ -39,6 +54,8 @@ function smoothScroll(scrollTargetY, speed = 1000) {
   
     runAnimation()
   }
+
+
 
 export const getSections = () => {
     return Array.from(document.querySelectorAll('section'));
