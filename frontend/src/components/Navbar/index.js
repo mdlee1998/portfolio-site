@@ -1,3 +1,4 @@
+import NavButton from "../NavButton";
 import logo from '../../img/logo.svg';
 import "./styles.scss";
 
@@ -14,16 +15,16 @@ const Navbar = () => {
                     <div>
                         <ul>
                             <li>
-                                <button >About Me</button>
+                                <NavButton Name='bio'>About Me</NavButton>
                             </li>
                             <li>
-                                <button >My Skills</button>
+                                <NavButton Name='skills'>My Skills</NavButton>
                             </li>
                             <li>
-                                <button >Projects</button>
+                                <NavButton Name='projects'>Projects</NavButton>
                             </li>
                             <li>
-                                <button >Contact Me</button>
+                                <NavButton Name='contact'>Contact Me</NavButton>
                             </li>
                             <li>
                                 <button >Resume</button>
