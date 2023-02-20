@@ -8,15 +8,7 @@
     padding-left: 4rem;
     padding-right: 4rem;
     margin-top: 2rem;
-    margin-bottom: 6rem;
-
-    img {
-      position: relative;
-      left: 3rem;
-      top: 0.5rem;
-      width: 4rem;
-      height: 4rem;
-    }  
+    margin-bottom: 6rem; 
 
     >nav {
       padding: 0.5rem;
@@ -40,7 +32,6 @@
                 margin-right: 1rem;
                 margin-left: 1rem;
                 >button {
-                  text-decoration: none;
                   color: $electricBlue;
                   font-size: large;
                   font-weight: bold;
@@ -51,6 +42,7 @@
                     background-color: $electricBlue;
                     border-radius: 3rem;
                     color: $delft;
+                    cursor: pointer;
                   }
                 }
             }
@@ -60,8 +52,22 @@
 
 .logo {
   text-decoration: none;
-                  font-size: large;
-                  font-weight: bold;
-                  background: none;
-                  border: none;
+  font-size: large;
+  font-weight: bold;
+  background: none;
+  border: none;
+                     
+  svg {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    top: 0.5rem;
+    left: 2.8rem;
+    fill: $pink;
+    &:hover {
+      fill: $electricBlue;
+      cursor: pointer;
+    }
+  }
+
 }

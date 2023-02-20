@@ -9,7 +9,7 @@ const NavButton = ({Name, children}) => {
     }
 
     return ( 
-        <button onClick={handleNavigation} >{children}</button>
+        <button onClick={handleNavigation} class='navbutton' >{children}</button>
      );
 }
  
