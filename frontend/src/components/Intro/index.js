@@ -2,9 +2,10 @@ import headshot from "../../img/HeadShot.jpeg";
 import Navbar from "../Navbar";
 import "./styles.scss";
 
-const Intro = () => {
+const Intro = ({name}) => {
+
   return (
-    <section className="intro">
+    <section data-section={name} className="intro">
         <Navbar></Navbar>
       <div className="inner-content">
         <article>
