@@ -1,29 +1,39 @@
-@import './css/variables.scss';
+@import "./css/variables.scss";
 
 html {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    @media (min-width: $medium) {
-      overflow: hidden;
-      body {
-        touch-action: none;
-      }
-    }
-    @media (max-width: $medium) {
-      body {
-        height: 100%;
-        overscroll-behavior: none;
-      }
-    }
-    font-size: 1vw;
+  body {
+    margin: 0;
+    padding: 0;
   }
-
+  @media (min-width: $medium) {
+    overflow: hidden;
+    body {
+      touch-action: none;
+    }
+  }
+  @media (max-width: $medium) {
+    body {
+      height: 100%;
+      overscroll-behavior: none;
+    }
+  }
+  font-size: 1vw;
+}
 
 section {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
+}
+
+.inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8rem;
+  margin-bottom: 10rem;
 }

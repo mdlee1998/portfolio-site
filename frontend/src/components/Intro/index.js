@@ -2,11 +2,10 @@ import headshot from "../../img/HeadShot.jpeg";
 import Navbar from "../Navbar";
 import "./styles.scss";
 
-const Intro = ({name}) => {
-
+const Intro = ({ name }) => {
   return (
     <section data-section={name} className="intro">
-        <Navbar></Navbar>
+      <Navbar></Navbar>
       <div className="inner-content">
         <article>
           <h1>Matthew Lee</h1>
@@ -16,7 +15,7 @@ const Intro = ({name}) => {
           </p>
         </article>
         <figure>
-          <img src={headshot} alt="" id='photo'/>
+          <img src={headshot} alt="" id="photo" />
         </figure>
       </div>
     </section>

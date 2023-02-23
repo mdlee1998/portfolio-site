@@ -1,5 +1,5 @@
+import logo from '../../img/logo.svg';
 import NavButton from "../NavButton";
-import logo from "../../img/logo.svg";
 import "./styles.scss";
 
 const Navbar = () => {

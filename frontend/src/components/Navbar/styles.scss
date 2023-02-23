@@ -10,25 +10,41 @@
     margin-top: 2rem;
     margin-bottom: 6rem; 
 
-    >nav {
-      padding: 0.5rem;
-      background: $delft;
-      border-radius: 4rem;
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
+    img {
+      position: relative;
+      left: 3rem;
+      top: 0.5rem;
+      width: 4rem;
+      height: 4rem;
+    }  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 
-        >div {
-            align-items: center;
-            display: flex;
-        }
-        ul {
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-            margin-right: 2rem;
+  > nav {
+    padding: 0.5rem;
+    background: $delft;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
 
-            >li {
+    > div {
+      align-items: center;
+      display: flex;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin-right: 2rem;
+
+      >li {
                 margin-right: 1rem;
                 margin-left: 1rem;
                 >button {
@@ -46,17 +62,35 @@
                   }
                 }
             }
+      > li {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        > button {
+          color: $electricBlue;
+          font-size: large;
+          font-weight: bold;
+          padding: 1rem;
+          background: none;
+          border: none;
+          &:hover {
+            background-color: $electricBlue;
+            border-radius: 3rem;
+            color: $delft;
+            cursor: pointer;
+          }
         }
+      }
     }
+  }
 }
 
 .logo {
   text-decoration: none;
-  font-size: large;
-  font-weight: bold;
-  background: none;
-  border: none;
-                     
+
+                  font-size: large;
+                  font-weight: bold;
+                  background: none;
+                  border: none;
   svg {
     position: relative;
     height: 4rem;
@@ -69,5 +103,4 @@
       cursor: pointer;
     }
   }
-
 }

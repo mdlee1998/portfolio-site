@@ -1,58 +1,45 @@
 @import "../../css/variables";
 
 .intro {
-    background: linear-gradient(110deg, $savoyBlue 66%, $electricBlue 34%);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    justify-content: normal;
-    font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(110deg, $savoyBlue 66%, $electricBlue 34%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: normal;
+  font-family: Arial, Helvetica, sans-serif;
 
-    .inner-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-grow: 1;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 0 8rem;
-      margin-bottom: 10rem;
+  article {
+    margin-left: 4rem;
+    z-index: 2;
+    font-family: inherit;
+    h1 {
+      font-size: 4rem;
+      color: $electricBlue;
       font-family: inherit;
+      margin: 1rem;
+    }
 
-      article {
-        margin-left: 4rem;
-        z-index: 2;
-        font-family: inherit;
-        h1 {
-          font-size: 4rem;
-          color: $electricBlue;
-          font-family: inherit;
-          margin: 1rem;
-        }
+    p {
+      width: 30vw;
+      font-size: 2rem;
+      color: $delft;
+      margin: 1rem;
 
-        p {
-          width: 30vw;
-          font-size: 2rem;
-          color: $delft;
-          margin: 1rem;
-
-          span {
-            color: $electricBlue;
-          }
-        }
-      }
-    
-
-      figure {
-        margin: 0;
-        img {
-          width: 24rem;
-          height: 24rem;
-          margin-right: 11rem;
-          border-radius: 3rem;
-          filter: drop-shadow(0 0 3rem darken($pink, 10%));
-        }
+      span {
+        color: $electricBlue;
       }
     }
+  }
+
+  figure {
+    margin: 0;
+    img {
+      width: 24rem;
+      height: 24rem;
+      margin-right: 11rem;
+      border-radius: 3rem;
+      filter: drop-shadow(0 0 3rem darken($pink, 10%));
+    }
+  }
 }
