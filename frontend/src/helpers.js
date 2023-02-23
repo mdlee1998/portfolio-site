@@ -15,7 +15,7 @@ export const goToSection = opts => {
       section = sections[currSectionIndex - 1]; 
     }
 
-    if(!section) return;
+    if(!section) return opts.section.dataset.section;
 
     smoothScroll(section.offsetTop);
     return section.dataset.section;
