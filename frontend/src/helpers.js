@@ -1,5 +1,3 @@
-import { changeSection } from './slices/sectionSlice';
-
 export const goToSection = opts => {
     let { section, modifier } = opts;
 
@@ -20,7 +18,7 @@ export const goToSection = opts => {
     if(!section) return;
 
     smoothScroll(section.offsetTop);
-    changeSection();
+    return section.dataset.section;
 }
 
 function smoothScroll(scrollTargetY, speed = 1000) {
